@@ -8,7 +8,7 @@ import { v4 as uuid } from 'uuid';
 import { db, storage } from './firebase';
 import firebase from 'firebase'
 
-function Preview() {
+function Chats() {
   const cameraImage = useSelector(selectCameraImage);
   const history = useHistory();
   const dispatch = useDispatch();
@@ -39,7 +39,7 @@ function Preview() {
           .getDownloadURL()
           .then(
             url => {
-              db.collection('post').add({
+              db.collection('posts').add({
                 imageUrl: url,
                 username: 'PAPA React',
                 read: false,
@@ -74,4 +74,4 @@ function Preview() {
   )
 }
 
-export default Preview
+export default Chats
