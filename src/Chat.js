@@ -29,7 +29,9 @@ function Chat({ id, profilePic, username, timestamp, imageUrl, read }) {
       <Avatar className="chat__avatar" src={profilePic} />
       <div className="chat__info">
         <h4>{username}</h4>
-        <p>Tap to view - <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()} /></p>
+        <p>
+        {!read && 'Tap to view - '}
+        <ReactTimeago date={new Date(timestamp?.toDate()).toUTCString()} /></p>
       </div>
 
       {!read && <StopRounded className="chat__redIcon" />}

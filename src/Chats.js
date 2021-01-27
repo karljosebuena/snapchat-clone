@@ -17,7 +17,6 @@ function Chats() {
             id: doc.id,
             data: doc.data(),
           })));
-        console.log(posts);
       })
   }, [])
 
