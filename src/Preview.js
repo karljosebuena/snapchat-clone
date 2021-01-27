@@ -7,9 +7,11 @@ import { AttachFile, Close, Create, Crop, MusicNote, Note, Send, TextFields, Tim
 import { v4 as uuid } from 'uuid';
 import { db, storage } from './firebase';
 import firebase from 'firebase'
+import { selectUser } from './features/appSlice';
 
 function Chats() {
   const cameraImage = useSelector(selectCameraImage);
+  const user = useSelector(selectUser);
   const history = useHistory();
   const dispatch = useDispatch();
 
@@ -43,7 +45,7 @@ function Chats() {
                 imageUrl: url,
                 username: 'PAPA React',
                 read: false,
-                // profilePic,
+                profilePic: user.profilePic,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
               });
               history.replace('/chats');

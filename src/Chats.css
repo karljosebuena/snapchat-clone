@@ -26,6 +26,15 @@
   padding-left: 8px;
 }
 
+.chats__searchIcon {
+  color: white;
+  font-size: 13px !important;
+}
+
+.chats__searchIcon {
+  color: white;
+}
+
 .chats__search > input {
   outline: none;
   background-color: transparent;
@@ -57,4 +66,20 @@
 .chats__post {
   -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
   scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+.chats__takePicIcon {
+  position: absolute;
+  background-color: white;
+  border-radius: 200px;
+  color: gray;
+  font-size: 40px !important;
+  cursor: pointer;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.chats__takePicIcon:hover {
+  opacity: 0.8;
 }

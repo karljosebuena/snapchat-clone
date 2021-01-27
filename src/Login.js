@@ -10,7 +10,6 @@ function Login() {
   const signIn = () => {
     auth.signInWithPopup(provider)
       .then(({ user: { displayName, photoURL, uid } }) => {
-        console.log({ displayName, photoURL, uid })
         dispatch(login({
           username: displayName,
           profilePic: photoURL,
