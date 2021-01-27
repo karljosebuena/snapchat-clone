@@ -1,4 +1,18 @@
+## Snapchat Clone REACT.JS! 💯 🔥
+
+Built with:
+👉 REDUX
+👉 REACT ROUTER
+👉 FIREBASE FIRESTORE (realtime database)
+👉 FIREBASE AUTHENTICATION (Login)
+👉 FIREBASE HOSTING (How to deploy)
+👉 REACT WEB CAM
+👉 REACT TIMEAGO
+👉 MATERIAL UI (Design)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+Demo: https://snapchat-clone-1c63b.web.app
 
 ## Available Scripts
 
